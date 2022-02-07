@@ -36,3 +36,5 @@ for i in range(len(price_lst)):
              'link': names_lst[i].get_attribute('href')}
 
     in_trend_db.update_one({'link': items['link']}, {'$set': items}, upsert=True)
+
+driver.quit()
